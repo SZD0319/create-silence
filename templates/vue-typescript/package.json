@@ -1,0 +1,33 @@
+{
+    "name": "silence-vue-starter",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "silence dev",
+        "build": "vue-tsc --build --force --noEmit && silence build",
+        "format": "prettier . --write"
+    },
+    "dependencies": {
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.0",
+        "pinia": "^2.3.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.8",
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "@vue/compiler-sfc": "^3.5.13",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "style-loader": "^4.0.0",
+        "vue-loader": "^17.4.2",
+        "ts-loader": "^9.5.2",
+        "typescript": "^5.7.3",
+        "vue-tsc": "^2.2.0",
+        "webpack": "^5.97.1",
+        "webpack-dev-server": "^5.2.0",
+        "prettier": "^3.4.2",
+        "silence-cli": "^1.0.0"
+    }
+}

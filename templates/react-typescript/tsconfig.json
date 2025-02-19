@@ -1,0 +1,19 @@
+{
+    "include": ["env.d.ts", "src/**/*", "src/**/*.tsx", "src/**/*.d.ts"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "moduleResolution": "bundler",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "noEmit": false,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "library",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "scripts": {
+        "build": "tsc && unbuild",
+        "format": "prettier . --write"
+    },
+    "keywords": [],
+    "files": [
+        "dist",
+        "package.json",
+        "README.md"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.10.7",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3",
+        "unbuild": "^3.3.1"
+    }
+}

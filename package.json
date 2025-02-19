@@ -1,0 +1,41 @@
+{
+    "name": "create-silence",
+    "version": "1.0.0",
+    "description": "The recommended way to start a Webpack-powered project",
+    "main": "dist/index.cjs",
+    "type": "module",
+    "bin": {
+        "create-silence": "./dist/index.mjs"
+    },
+    "scripts": {
+        "build": "tsc && unbuild",
+        "format": "prettier . --write"
+    },
+    "keywords": [
+        "silence-cli",
+        "create-silence",
+        "webpack"
+    ],
+    "files": [
+        "dist",
+        "package.json",
+        "README.md"
+    ],
+    "author": "Silence",
+    "repository": {
+        "url": "https://github.com/SZD0319/create-silence.git"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.10.7",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3",
+        "unbuild": "^3.3.1"
+    },
+    "dependencies": {
+        "@inquirer/prompts": "^7.2.3",
+        "chalk": "^5.4.1",
+        "commander": "^13.1.0",
+        "ora": "^8.1.1"
+    }
+}
